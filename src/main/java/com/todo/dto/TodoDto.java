@@ -1,0 +1,23 @@
+package com.todo.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class TodoDto {
+
+    private Long id;
+
+    private Date created;
+
+    private String title;
+
+    private Boolean isDone;
+}
